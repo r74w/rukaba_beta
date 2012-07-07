@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120705205608) do
+ActiveRecord::Schema.define(:version => 20120707164435) do
 
   create_table "posts", :force => true do |t|
     t.integer  "number"
@@ -24,6 +24,16 @@ ActiveRecord::Schema.define(:version => 20120705205608) do
     t.string   "email"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "pass"
+  end
+
+  create_table "yarns", :force => true do |t|
+    t.boolean  "is_pinned"
+    t.boolean  "is_bumpable"
+    t.boolean  "is_administrative"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.decimal  "factor"
   end
 
 end

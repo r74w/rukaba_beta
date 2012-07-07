@@ -1,4 +1,5 @@
 RukabaBeta::Application.routes.draw do
+	#get ":board/:id.html" => "posts#all"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
