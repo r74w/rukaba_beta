@@ -1,4 +1,20 @@
 RukabaBeta::Application.routes.draw do
+  post "board/new"
+
+  get "board/delete"
+
+  get "board/modify"
+
+  post "yarn/new"
+
+  post "yarn/delete"
+
+  get "post/new"
+
+  get "post/delete"
+  
+  get ":board/:id.html" => "board#index"
+
 	#get ":board/:id.html" => "posts#all"
   # The priority is based upon order of creation:
   # first created -> highest priority.
