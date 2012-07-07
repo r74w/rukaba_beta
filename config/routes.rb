@@ -1,4 +1,10 @@
 RukabaBeta::Application.routes.draw do
+  post "administrator/login"
+
+  get "administrator/logout"
+
+  get "administrator/index"
+
   post "board/new"
 
   get "board/delete"

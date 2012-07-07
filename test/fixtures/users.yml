@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  role: MyString
+  pass: MyString
+  name: MyString
+  postname: MyString
+
+two:
+  role: MyString
+  pass: MyString
+  name: MyString
+  postname: MyString
